@@ -1,0 +1,255 @@
+
+/* CSS Reset */
+/* ---------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: white;
+
+    /* Variables */
+    --color-pri: rgb(0, 88, 104);
+    --color-sec: rgb(69, 69, 69);
+    --height-nav: 3rem;
+    --height-footer: 5rem;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Universal settings */
+/* ---------------------------------- */
+
+.btn {
+    padding: .5rem 1.2rem;
+    border-radius: 3px;
+}
+
+.primary-btn {
+    background: var(--color-pri);
+    color: white;
+    border: 2px solid var(--color-pri);
+}
+
+.secondary-btn {
+    background: none;
+    color: var(--color-pri);
+    border: 2px solid var(--color-pri);
+}
+
+svg {
+    width: 1rem;
+    fill: white;
+}
+
+span.color,
+.btn {
+    cursor: pointer;
+}
+
+/* Specific settings */
+/* ---------------------------------- */
+
+body .main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-container .left-container {
+    width: 70%;
+    background: white;
+}
+.main-container .right-container {
+    width: 30%;
+    background: lightblue;
+}
+
+.main-container > .container > nav,
+.main-container > .container > main
+ {
+    padding: 0 3rem;
+}
+
+.container nav {
+    width: 100%;
+    height: var(--height-nav);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left-container nav {
+    justify-content: flex-start;
+}
+.right-container nav {
+    justify-content: flex-end;
+}
+
+.left-container nav a.logo svg {
+    fill: black;
+    width: 20px;
+    transform: translateY(4px);
+}
+
+.left-container nav a {
+    color: hsl(0, 0%, 60%);
+}
+
+.right-container nav svg {
+    width: 1.2rem;
+}
+
+.left-container main,
+.right-container main {
+    /* min-height: calc(100% - var(--height-nav) - var(--height-footer)); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-container main {
+    max-width: 90%;
+}
+
+.left-container main h1 {
+    margin-bottom: .8rem;
+}
+.left-container main h1 span {
+    color: var(--color-pri);
+}
+
+.left-container main p {
+    margin-bottom: 2rem;
+    color: var(--color-sec);
+}
+
+.left-container main .btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-container main .btns #btn-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-container main .btns #btn-favorite svg {
+    margin-left: 5px;
+    width: 24px;
+    fill: var(--color-pri);
+}
+
+.left-container main .colors {
+    margin-top: 2rem;
+}
+
+.left-container main .colors .color {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.left-container main .colors .blue {
+    background: lightskyblue;
+}
+.left-container main .colors .pink {
+    background: lightpink;
+}
+.left-container main .colors .yellow {
+    background: rgb(255, 255, 98);
+}
+.left-container main .colors .green {
+    background: lightgreen;
+}
+
+.right-container main {
+    position: relative;
+}
+
+.right-container main img {
+    position: absolute;
+    left: 0;
+    min-width: 300px;
+    width: 100%;
+    max-width: 626px;
+    transform: translateX(-30%);
+}
+
+.container footer {
+    height: var(--height-footer);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.container footer .stats {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-container footer .stats {
+    border-right: 1px solid hsl(0, 0%, 80%);
+}
+.left-container footer .stats:last-child {
+    border-right: none;
+}
+
+.container footer .stats h6 {
+    font-size: 1rem;
+}
+
+.container footer .stats p {
+    font-size: .8rem;
+}
+
+.left-container footer {
+    background: hsl(0, 0%, 95%);
+}
+.right-container footer {
+    background: hsl(195, 53%, 69%);
+}
+
+.right-container footer * {
+    color: var(--color-pri);
+}
