@@ -1,4 +1,14 @@
 
+/* Variables */
+/* ---------------------------------- */
+
+:root {
+    --color-pri: rgb(0, 88, 104);
+    --color-sec: rgb(69, 69, 69);
+    --height-nav: 3rem;
+    --height-footer: 5rem;
+}
+
 /* CSS Reset */
 /* ---------------------------------- */
 
@@ -16,12 +26,6 @@ body {
     height: 100%;
     width: 100%;
     background: white;
-
-    /* Variables */
-    --color-pri: rgb(0, 88, 104);
-    --color-sec: rgb(69, 69, 69);
-    --height-nav: 3rem;
-    --height-footer: 5rem;
 }
 
 a {
@@ -84,6 +88,7 @@ body .main-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: max-content;
 }
 
 .main-container .left-container {
@@ -104,6 +109,7 @@ body .main-container {
 .container nav {
     width: 100%;
     height: var(--height-nav);
+    min-height: var(--height-nav);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -128,6 +134,10 @@ body .main-container {
 
 .right-container nav svg {
     width: 1.2rem;
+}
+
+.container main {
+    min-height: 22rem;
 }
 
 .left-container main,
@@ -157,6 +167,7 @@ body .main-container {
 .left-container main .btns {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -212,6 +223,7 @@ body .main-container {
 
 .container footer {
     height: var(--height-footer);
+    min-height: var(--height-footer);
     display: flex;
     align-items: center;
     justify-content: center;
