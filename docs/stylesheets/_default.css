@@ -1,0 +1,8 @@
+/* Site-wide Default VARIABLES */
+/* Any changes made here may affect site-wide appearance */
+
+:root {
+    /* Colors */
+    --bg-default: #ffffff;
+    --fg-default: #000000;
+}
