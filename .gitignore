@@ -1,0 +1,5 @@
+# Excluding VSCode workspace folder
+.vscode/
+
+# Excluding the reference folder
+ref/
