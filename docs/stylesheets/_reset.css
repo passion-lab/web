@@ -1,0 +1,33 @@
+
+/* Site-wide Style RESET */
+/* Any changes made here may affect site-wide appearance */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+
+a,
+button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
