@@ -1,0 +1,40 @@
+
+/* Site-wide FONTS Styles */
+/* Any changes made here may affect site-wide appearance */
+
+
+@font-face {
+    font-family: Rage;
+    src: url('../fonts/RAGE.TTF');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Love-Light;
+    src: url('../fonts/LoveLight-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: AG-Sans;
+    src: url('../fonts/AlegreyaSans-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: AG-Sans-Light;
+    src: url('../fonts/AlegreyaSans-Light.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: AG-Sans-Bold;
+    src: url('../fonts/AlegreyaSans-ExtraBold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: AG-Sans-Bolder;
+    src: url('../fonts/AlegreyaSans-Black.ttf');
+    font-display: swap;
+}
