@@ -3,3 +3,31 @@
 /* Any changes made here may affect site-wide appearance */
 
 
+h1 {
+    font-family: AG-Sans-Bolder, sans-serif;
+    font-weight: 900;
+}
+
+h3, h5 {
+    font-family: AG-Sans-Bold, sans-serif;
+}
+
+h2, h4, h6 {
+    font-family: AG-Sans-Light, sans-serif;
+}
+
+p {
+    font-family: AG-Sans, sans-serif;
+}
+
+.elegant {
+    font-family: Love-Light, cursive;
+}
+
+.gradient-text {
+    color: var(--grey-at-80); 
+    background-image: linear-gradient(315deg, var(--grey-at-80) 50%, transparent 100%); 
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
