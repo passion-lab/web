@@ -3,6 +3,11 @@
 
 :root {
     /* Colors */
+    --accent-pri: #008e89;
+    
     --bg-default: #ffffff;
+    --grey-at-80: hsl(0, 0%, 80%);
+    --grey-at-50: hsl(0, 0%, 50%);
+    --grey-at-20: hsl(0, 0%, 20%);
     --fg-default: #000000;
 }
