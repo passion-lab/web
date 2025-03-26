@@ -3,7 +3,61 @@
 /* Any changes made here may affect page-wide (index.html) appearance */
 
 
-@import url(./_default.css);
-@import url(./_reset.css);
-@import url(./_universal.css);
+@import url('./_fonts.css');
+@import url('./_default.css');
+@import url('./_reset.css');
+@import url('./_universal.css');
 
+
+body main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .title {
+    position: relative;
+    text-align: center;
+}
+
+.title p {
+    color: var(--accent-pri);
+    font-size: 3rem;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    transform: rotate(-10deg);
+}
+
+.title h1 {
+    text-transform: uppercase;
+    color: var(--grey-at-80);
+    font-size: 5rem;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 1px;
+}
+
+.title::before {
+    top: 0;
+    right: 0;
+    background: linear-gradient(90deg, transparent, var(--accent-pri));
+}
+
+.title::after {
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--accent-pri), transparent);
+}
+
+main h4 {
+    margin-top: 3rem;
+    background: var(--grey-at-80);
+}
