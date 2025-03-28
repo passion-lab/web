@@ -50,8 +50,8 @@ body main * {
 
 .design #mobile {
     position: absolute;
-    height: 250px;
-    width: 150px;
+    height: 170px;
+    width: 100px;
     bottom: 5%;
     left: 20%;
     border-radius: 15px;
