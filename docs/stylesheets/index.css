@@ -3,26 +3,73 @@
 /* Any changes made here may affect page-wide (index.html) appearance */
 
 
+/* Imports of external CSS files
+---------------------------------- */
+
 @import url('./_fonts.css');
 @import url('./_default.css');
 @import url('./_reset.css');
 @import url('./_universal.css');
 
 
+/* Main content
+---------------------------------- */
+
 body main {
+    position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    background: hsl(0, 0%, 95%);
 }
+
+body main * {
+    z-index: 1;
+}
+
+/* Background design elements
+---------------------------------- */
+
+.design {
+    z-index: 0;
+    opacity: .7;
+}
+
+.design #desktop {
+    position: absolute;
+    height: 150px;
+    width: 250px;
+    top: 10%;
+    right: 10%;
+    background: linear-gradient(to bottom right, white, transparent);
+    transform: skewY(15deg);
+    box-shadow: 0 40px 15px -15px hsl(0, 0%, 90%);
+}
+
+.design #mobile {
+    position: absolute;
+    height: 250px;
+    width: 150px;
+    bottom: 5%;
+    left: 20%;
+    border-radius: 15px;
+    background: linear-gradient(to bottom left, white, transparent);
+    box-shadow: -5px 5px 10px hsl(0, 0%, 90%);
+    transform: rotateX(24deg) rotateY(-24deg) skew(33deg);
+}
+
+/* Main content (cont'd...)
+---------------------------------- */
 
 main .title {
     position: relative;
     text-align: center;
 }
 
-.title p {
+main .title p {
     color: var(--accent-pri);
     font-size: 3rem;
     position: absolute;
@@ -31,33 +78,22 @@ main .title {
     transform: rotate(-10deg);
 }
 
-.title h1 {
+main .title h1 {
     text-transform: uppercase;
     color: var(--grey-at-80);
     font-size: 5rem;
 }
 
-.title::before,
-.title::after {
+main .title::before {
     position: absolute;
     content: '';
-    width: 50%;
+    width: 100%;
     height: 1px;
-}
-
-.title::before {
-    top: 0;
-    right: 0;
-    background: linear-gradient(90deg, transparent, var(--accent-pri));
-}
-
-.title::after {
     bottom: 0;
     left: 0;
-    background: linear-gradient(90deg, var(--accent-pri), transparent);
+    background: linear-gradient(90deg, transparent, var(--accent-pri), transparent);
 }
 
 main h4 {
     margin-top: 3rem;
-    background: var(--grey-at-80);
 }
