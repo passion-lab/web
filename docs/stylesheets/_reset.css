@@ -16,7 +16,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background: white;
+    background: var(--bg-default);
 }
 
 a,
