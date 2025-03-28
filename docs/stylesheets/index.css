@@ -6,10 +6,10 @@
 /* Imports of external CSS files
 ---------------------------------- */
 
-@import url('./_fonts.css');
+@import url('./-fonts.css');
 @import url('./-default.css');
-@import url('./_reset.css');
-@import url('./_universal.css');
+@import url('./-reset.css');
+@import url('./-universal.css');
 
 
 /* Main content
