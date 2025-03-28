@@ -43,7 +43,7 @@ body main * {
     width: 250px;
     top: 10%;
     right: 10%;
-    background: linear-gradient(to bottom right, white, transparent);
+    background: linear-gradient(to bottom right, white, var(--bg-default) 80%);
     transform: skewY(15deg);
     box-shadow: 0 40px 15px -15px hsl(0, 0%, 90%);
 }
@@ -55,7 +55,7 @@ body main * {
     bottom: 5%;
     left: 20%;
     border-radius: 15px;
-    background: linear-gradient(to bottom left, white, transparent);
+    background: linear-gradient(to bottom left, white, var(--bg-default) 80%);
     box-shadow: -5px 5px 10px hsl(0, 0%, 90%);
     transform: rotateX(24deg) rotateY(-24deg) skew(33deg);
 }
