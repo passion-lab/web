@@ -5,9 +5,9 @@
     /* Colors */
     --accent-pri: #008e89;
     
-    --bg-default: #ffffff;
+    --bg-default: hsl(0, 0%, 95%);
     --grey-at-80: hsl(0, 0%, 80%);
     --grey-at-50: hsl(0, 0%, 50%);
     --grey-at-20: hsl(0, 0%, 20%);
-    --fg-default: #000000;
+    --fg-default: hsl(0, 0%, 5%);
 }
