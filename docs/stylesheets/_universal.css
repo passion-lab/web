@@ -26,8 +26,8 @@ p {
 
 .gradient-text {
     color: var(--grey-at-80); 
-    background-image: linear-gradient(315deg, var(--grey-at-80) 50%, transparent 100%); 
-    background-clip: text; 
+    background-image: linear-gradient(315deg, var(--grey-at-80) 50%, var(--bg-default) 100%); 
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
