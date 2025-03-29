@@ -6,10 +6,13 @@
 /* Imports of external CSS files
 ---------------------------------- */
 
+/* - global files */
 @import url('./-fonts.css');
 @import url('./-default.css');
 @import url('./-reset.css');
 @import url('./-universal.css');
+
+/* - local (page-specific) files */
 @import url('./index-animations.css');
 
 
