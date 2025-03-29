@@ -1,0 +1,47 @@
+
+/* Page-wide Specific Styling */
+/* Any changes made here may affect page-wide (index.html) appearance */
+
+
+/* Animation - background desktop
+---------------------------------- */
+
+@-webkit-keyframes desktop-slide {
+    from {
+        right: 10%;
+    }
+    to {
+        right: calc(10% + 20px);
+    }
+}
+
+@keyframes desktop-slide {
+    from {
+        right: 10%;
+    }
+    to {
+        right: calc(10% + 20px);
+    }
+}
+
+
+/* Animation - background mobile
+---------------------------------- */
+
+@-webkit-keyframes mobile-slide {
+    from {
+        bottom: 5%;
+    }
+    to {
+        bottom: 10%;
+    }
+}
+
+@keyframes mobile-slide {
+    from {
+        bottom: 5%;
+    }
+    to {
+        bottom: 10%;
+    }
+}
