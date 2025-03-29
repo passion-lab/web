@@ -1,0 +1,22 @@
+
+/* Page-wide Specific Styling */
+/* Any changes made here may affect page-wide (index.html) appearance */
+
+@media (max-width: 521px) {
+
+    main .title p {
+        left: 50%;
+        top: -30%;
+        transform: translateX(-50%) rotate(-10deg);
+    }
+
+    main .title h1 {
+        line-height: 85%;
+        margin-bottom: 1rem;
+    }
+
+    main .title::before {
+        background: linear-gradient(90deg, transparent, var(--grey-at-80), transparent);
+    }
+
+}
