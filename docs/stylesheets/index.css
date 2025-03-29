@@ -10,6 +10,7 @@
 @import url('./-default.css');
 @import url('./-reset.css');
 @import url('./-universal.css');
+@import url('./index-animations.css');
 
 
 /* Main content
@@ -47,6 +48,8 @@ body main * {
     background: linear-gradient(to bottom right, white, var(--bg-default) 80%);
     transform: skewY(15deg);
     box-shadow: 0 40px 15px -15px hsl(0, 0%, 90%);
+    -webkit-animation: desktop-slide 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) 1s infinite alternate both;
+    animation: desktop-slide 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) 1s infinite alternate both;
 }
 
 .design #mobile {
@@ -59,6 +62,8 @@ body main * {
     background: linear-gradient(to bottom left, white, var(--bg-default) 80%);
     box-shadow: -5px 5px 10px hsl(0, 0%, 90%);
     transform: rotateX(24deg) rotateY(-24deg) skew(33deg);
+    -webkit-animation: mobile-slide 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) 0s infinite alternate both;
+    animation: mobile-slide 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) 0s infinite alternate both;
 }
 
 /* Main content (cont'd...)
