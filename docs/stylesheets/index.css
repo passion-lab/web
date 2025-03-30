@@ -103,13 +103,26 @@ main .title::before {
 }
 
 main h4 {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     color: var(--fg-default);
     text-align: center;
 }
 
-main button {
+/* Footer content
+---------------------------------- */
+
+body footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+footer a {
     /* element specific variables */
     --this-height: 100px;
     --logo-size: 20px;
@@ -124,7 +137,7 @@ main button {
     min-height: max-content;
 }
 
-main button h6 {
+footer a h6 {
     font-size: 1rem;
     text-transform: uppercase;
     color: var(--grey-at-50);
@@ -133,25 +146,25 @@ main button h6 {
     transition: all .5s ease-in;
 }
 
-main button span {
+footer a span {
     height: 100%;
     display: flex;
     z-index: 10;
     transition: all .5s ease-out;
 }
 
-main button span svg {
+footer a span svg {
     width: var(--logo-size);
     fill: var(--accent-pri);
 }
 
-main button:hover h6 {
+footer a:hover h6 {
     letter-spacing: normal;
     transform: translateX(calc(var(--this-height) / 2 * -1));
     opacity: 0;
 }
 
-main button:hover span {
+footer a:hover span {
     --w1: calc(var(--this-height) / 2);
     --w2: calc(var(--logo-size) / 2);
     --position: calc((var(--w1) - var(--w2)));
