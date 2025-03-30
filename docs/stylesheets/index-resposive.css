@@ -19,4 +19,8 @@
         background: linear-gradient(90deg, transparent, var(--grey-at-80), transparent);
     }
 
+    body footer {
+        justify-content: end;
+    }
+
 }
