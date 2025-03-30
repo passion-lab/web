@@ -7,18 +7,12 @@
 ---------------------------------- */
 
 @-webkit-keyframes desktop-slide {
-    from {
-        right: 10%;
-    }
     to {
         right: calc(10% + 20px);
     }
 }
 
 @keyframes desktop-slide {
-    from {
-        right: 10%;
-    }
     to {
         right: calc(10% + 20px);
     }
@@ -29,18 +23,12 @@
 ---------------------------------- */
 
 @-webkit-keyframes mobile-slide {
-    from {
-        bottom: 5%;
-    }
     to {
         bottom: 10%;
     }
 }
 
 @keyframes mobile-slide {
-    from {
-        bottom: 5%;
-    }
     to {
         bottom: 10%;
     }
