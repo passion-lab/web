@@ -9,12 +9,14 @@
 @-webkit-keyframes desktop-slide {
     to {
         right: calc(10% + 20px);
+        box-shadow: 0 20px 15px -15px hsl(0, 0%, 90%);
     }
 }
 
 @keyframes desktop-slide {
     to {
         right: calc(10% + 20px);
+        box-shadow: 0 20px 15px -15px hsl(0, 0%, 90%);
     }
 }
 
@@ -25,11 +27,13 @@
 @-webkit-keyframes mobile-slide {
     to {
         bottom: 10%;
+        box-shadow: -15px 15px 10px hsl(0, 0%, 90%);
     }
 }
 
 @keyframes mobile-slide {
     to {
         bottom: 10%;
+        box-shadow: -15px 15px 10px hsl(0, 0%, 90%);
     }
 }
